@@ -65,6 +65,12 @@ section {
     padding: 50px 80px;
 }
 
+@media all and (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+}
+
 .grid {
     width: 100%;
     display: -webkit-box;
@@ -135,6 +141,15 @@ header nav ul li {
     font-size: 20px;
 }
 
+@media all and (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
 
 /* Showcase */
 
@@ -213,6 +228,19 @@ section#benefits {
     color: red;
 }
 
+@media (max-width: 1100px) {
+    #benefits-list p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 768px) {
+    #benefits .grid #benefits-pizza-image, #benefits .grid #benefits-list {
+        flex-basis: 100%;
+    }
+}
+
 /* Customize (ingredients) */
 
 #customize .grid {
@@ -257,6 +285,18 @@ p.ingredient-name {
     transition: transform 1s 1s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    #customize .grid .ingredient-box {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    #customize .grid .ingredient-box {
+        flex-basis: 100%;
+    }
+}
+
 /* Cola */
 
 #add-cola {
@@ -282,6 +322,13 @@ p.ingredient-name {
 #pizza-cola img, #cola-pizza img {
     width: 70%;
     margin: 0 auto;
+}
+
+@media all and (max-width: 575px) {
+    #pizza-cola, #cola-pizza {
+        flex-basis: 100%;
+        min-height: 200px;
+    }
 }
 
 /* Testimonials */
@@ -325,6 +372,12 @@ blockquote span {
     font-style: normal;
     font-weight: bold;
     margin-top: 1em;
+}
+
+@media all and (max-width: 768px) {
+    .testimonial-box {
+        flex-basis: 100%;
+    }
 }
 
 /* Pricing tables */
@@ -400,6 +453,17 @@ blockquote span {
     background-color: red;
 }
 
+@media all and (max-width: 768px) {
+    #pricing-tables .grid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+    #pricing-tables .col {
+        flex-basis: 75%;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -422,4 +486,14 @@ footer ul {
 
 footer ul li {
     margin-left: 25px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
